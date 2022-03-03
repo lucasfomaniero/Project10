@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B66525127CE8E8F00254088 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66525027CE8E8F00254088 /* AddPersonViewController.swift */; };
 		1BBC839B27CD2ED300064B89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC839A27CD2ED300064B89 /* AppDelegate.swift */; };
 		1BBC839D27CD2ED300064B89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC839C27CD2ED300064B89 /* SceneDelegate.swift */; };
 		1BBC839F27CD2ED300064B89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC839E27CD2ED300064B89 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B66525027CE8E8F00254088 /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
 		1BBC839727CD2ED300064B89 /* Project10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBC839A27CD2ED300064B89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BBC839C27CD2ED300064B89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				1BBC83AE27CD307C00064B89 /* PersonCollectionViewCell.swift */,
 				1BBC83B027CD422200064B89 /* +UIView.swift */,
 				1BBC83B427CDA00E00064B89 /* Person.swift */,
+				1B66525027CE8E8F00254088 /* AddPersonViewController.swift */,
 			);
 			path = Project10;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				1BBC83B527CDA00E00064B89 /* Person.swift in Sources */,
 				1BBC839D27CD2ED300064B89 /* SceneDelegate.swift in Sources */,
 				1BBC83AF27CD307C00064B89 /* PersonCollectionViewCell.swift in Sources */,
+				1B66525127CE8E8F00254088 /* AddPersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
