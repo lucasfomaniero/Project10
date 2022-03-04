@@ -25,7 +25,7 @@ class AddPersonViewController: UIViewController {
     let personImageView: RoundedImageView = {
         let iv = RoundedImageView(frame: .zero)
         iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.image = UIImage(named: "lucas")
+        iv.image = UIImage(named: "custom.camera.circle")
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.layer.borderWidth = 1
@@ -105,7 +105,6 @@ class AddPersonViewController: UIViewController {
 extension AddPersonViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         guard let image = info[.editedImage] as? UIImage, let imageName = saveImage(image) else { return }
-        print(imageName)
         let person = Person(name: textField.text ?? "Unknown", image: imageName)
         self.person = person
         dismiss(animated: true)

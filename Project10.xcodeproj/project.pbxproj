@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B66525127CE8E8F00254088 /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66525027CE8E8F00254088 /* AddPersonViewController.swift */; };
+		1B66525827D047C200254088 /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B66525727D047C200254088 /* UserDefaultService.swift */; };
 		1BBC839B27CD2ED300064B89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC839A27CD2ED300064B89 /* AppDelegate.swift */; };
 		1BBC839D27CD2ED300064B89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC839C27CD2ED300064B89 /* SceneDelegate.swift */; };
 		1BBC839F27CD2ED300064B89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBC839E27CD2ED300064B89 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		1B66525027CE8E8F00254088 /* AddPersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
+		1B66525727D047C200254088 /* UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
 		1BBC839727CD2ED300064B89 /* Project10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project10.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BBC839A27CD2ED300064B89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BBC839C27CD2ED300064B89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B66525227D0476100254088 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B66525027CE8E8F00254088 /* AddPersonViewController.swift */,
+				1BBC83AE27CD307C00064B89 /* PersonCollectionViewCell.swift */,
+				1BBC839E27CD2ED300064B89 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B66525327D0476A00254088 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC83B427CDA00E00064B89 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B66525427D0477400254088 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC83B227CD805200064B89 /* RoundedImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1B66525527D0479300254088 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1BBC83B027CD422200064B89 /* +UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B66525627D047B500254088 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1B66525727D047C200254088 /* UserDefaultService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		1BBC838E27CD2ED300064B89 = {
 			isa = PBXGroup;
 			children = (
@@ -66,18 +110,17 @@
 		1BBC839927CD2ED300064B89 /* Project10 */ = {
 			isa = PBXGroup;
 			children = (
-				1BBC83B227CD805200064B89 /* RoundedImageView.swift */,
+				1B66525627D047B500254088 /* Services */,
+				1B66525527D0479300254088 /* Extensions */,
+				1B66525427D0477400254088 /* Components */,
+				1B66525327D0476A00254088 /* Models */,
+				1B66525227D0476100254088 /* Views */,
 				1BBC839A27CD2ED300064B89 /* AppDelegate.swift */,
 				1BBC839C27CD2ED300064B89 /* SceneDelegate.swift */,
-				1BBC839E27CD2ED300064B89 /* ViewController.swift */,
 				1BBC83A027CD2ED300064B89 /* Main.storyboard */,
 				1BBC83A327CD2ED800064B89 /* Assets.xcassets */,
 				1BBC83A527CD2ED800064B89 /* LaunchScreen.storyboard */,
 				1BBC83A827CD2ED800064B89 /* Info.plist */,
-				1BBC83AE27CD307C00064B89 /* PersonCollectionViewCell.swift */,
-				1BBC83B027CD422200064B89 /* +UIView.swift */,
-				1BBC83B427CDA00E00064B89 /* Person.swift */,
-				1B66525027CE8E8F00254088 /* AddPersonViewController.swift */,
 			);
 			path = Project10;
 			sourceTree = "<group>";
@@ -159,6 +202,7 @@
 				1BBC839B27CD2ED300064B89 /* AppDelegate.swift in Sources */,
 				1BBC83B527CDA00E00064B89 /* Person.swift in Sources */,
 				1BBC839D27CD2ED300064B89 /* SceneDelegate.swift in Sources */,
+				1B66525827D047C200254088 /* UserDefaultService.swift in Sources */,
 				1BBC83AF27CD307C00064B89 /* PersonCollectionViewCell.swift in Sources */,
 				1B66525127CE8E8F00254088 /* AddPersonViewController.swift in Sources */,
 			);

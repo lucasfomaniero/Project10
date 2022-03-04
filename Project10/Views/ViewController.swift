@@ -20,7 +20,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         navigationItem.rightBarButtonItem = addButton
         collectionView.register(PersonCollectionViewCell.self, forCellWithReuseIdentifier: cellID)
         collectionView.contentInset = UIEdgeInsets(top: 20, left: 10, bottom: 20, right: 10)
-
+        loadPeople()
     }
     
     @objc func showAddPersonController(){
@@ -58,7 +58,6 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
         return paths[0]
     }
     
-
 }
 
 extension ViewController {
@@ -80,6 +79,23 @@ extension ViewController {
         return 8
     }
     
+    func save() {
+        if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: people, requiringSecureCoding: false) {
+            let defaults = UserDefaults.standard
+            defaults.set(savedData, forKey: "people")
+        }
+    }
+    
+    func loadPeople() {
+        let defaults = UserDefaults.standard
+
+        if let savedPeople = defaults.object(forKey: "people") as? Data {
+            if let decodedPeople = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedPeople) as? [Person] {
+                people = decodedPeople
+            }
+        }
+    }
+    
 }
 
 protocol AddPersonDelegate: AnyObject {
@@ -89,6 +105,7 @@ protocol AddPersonDelegate: AnyObject {
 extension ViewController: AddPersonDelegate {
     func shouldSaveANewPerson(_ person: Person) {
         people.append(person)
+        save()
         collectionView.reloadData()
     }
 }

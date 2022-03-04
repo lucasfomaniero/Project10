@@ -31,7 +31,7 @@ class PersonCollectionViewCell: UICollectionViewCell {
     let personImageView: RoundedImageView = {
         let iv = RoundedImageView(frame: .zero)
         iv.translatesAutoresizingMaskIntoConstraints = false
-        iv.image = UIImage(named: "lucas")
+        iv.image = UIImage(systemName: "custom.camera.circle")
         iv.contentMode = .scaleAspectFill
         iv.clipsToBounds = true
         iv.layer.borderWidth = 1
